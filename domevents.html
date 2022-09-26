@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div id="result">
+                <h1>HERE</h1>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <button class="btn btn-danger" id="btn-red">red</button>
+            <button class="btn btn-danger" id="btn-green">green</button>
+
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>
+
+
+<script>
+    var redbutton=document.querySelector("#btn-red")
+    var resultBox=document.querySelector("#result")
+    redbutton.addEventListener("click",()=>{
+        resultBox.innerHTML="<h1> red button clicked</h1>"
+        resultBox.style.backgroundColor="red"
+        })
+
+    var greenbutton=document.querySelector("#btn-green")
+    var resultBox=document.querySelector("#result")
+    greenbutton.addEventListener("click",()=>{
+        resultBox.innerHTML="<h1> green button clicked</h1>"
+        resultBox.style.backgroundColor="green"
+        })
+        
+
+
+
+</script>
+
+
+</html>
